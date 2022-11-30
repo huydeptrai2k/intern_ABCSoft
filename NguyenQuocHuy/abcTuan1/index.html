@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/9280bc3640.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <title>Nano Folio - Simple HTML Template</title>
+</head>
+<body>
+    <div class="img-back">
+    </div>
+    <div class="img-modals"> 
+        <button title="Previous (Left arrow key)" type="button" class="btn-left-pre"><</button>
+        <button title="Next (Right arrow key)" type="button" class="btn-right-next">></button>
+    </div>
+    <div class="container">
+        <section class="site-header">
+            <i class="fas fa-heart fa-3x"></i>
+            <h1>Nano Folio</h1>
+        </section>
+        <section class="about">
+            <div class="about-header">
+                <i class="fas fa-users fa-2x"></i>
+                <h2>About us</h2>
+            </div>
+            <div class="about-text">
+                <p class="mb-40">
+                    Nano Folio is simple HTML template with a minimal very light-weight custom CSS file. Max content width is 940 pixels. You can easily change the width or any part in this template. Gallery comes with a pop-up image and simple categories.
+                </p>
+                <p class="mb-0">Please support Tooplate website by telling your friends about it. That is going to be very helpful for us. Feel free to 
+                    <a rel="nofollow" href="https://www.tooplate.com/contact" target="_blank">message us</a>
+                    via email or live chat if you have anything to say.
+                </p>
+            </div>
+        </section>
+        <div class="gallery-section" > 
+            <ul class="filters-button-group">
+                <li><a href="javascript:;" data-filter=".city" class="button" onclick="changeGallery('citys', this)">City</a></li>
+                <li><a href="javascript:;" data-filter=".nature" class="button" onclick="changeGallery('natures', this)">Nature</a></li>
+                <li><a href="javascript:;" data-filter=".portraits"class="button" onclick="changeGallery('portraits',this)">Portraits</a></li>
+                <li><a href="javascript:;" class="button active" data-filter="*" onclick="changeGallery('all', this)">Show All</a></li>
+            </ul>
+            <div class="gallery" id="all">
+                <div class="gallery-item portraits" >
+                    <a href="javascript:;" data-link="./assets/images/img-01.jpg">
+                        <img src="./assets/images/tn-img-01.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item portraits" >
+                    <a href="javascript:;" data-link="./assets/images/img-02.jpg">
+                        <img src="./assets/images/tn-img-02.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item city" >
+                    <a href="javascript:;" data-link="./assets/images/img-03.jpg">
+                        <img src="./assets/images/tn-img-03.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item nature" >
+                    <a href="javascript:;" data-link="./assets/images/img-04.jpg">
+                        <img src="./assets/images/tn-img-04.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item city" >
+                    <a href="javascript:;" data-link="./assets/images/img-05.jpg">
+                        <img src="./assets/images/tn-img-05.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item city" >
+                    <a href="javascript:;" data-link="./assets/images/img-06.jpg">
+                        <img src="./assets/images/tn-img-06.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item nature" >
+                    <a href="javascript:;" data-link="./assets/images/img-07.jpg">
+                        <img src="./assets/images/tn-img-07.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item nature" >
+                    <a href="javascript:;" data-link="./assets/images/img-08.jpg">
+                        <img src="./assets/images/tn-img-08.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item nature" >
+                    <a href="javascript:;" data-link="./assets/images/img-09.jpg">
+                        <img src="./assets/images/tn-img-09.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item portraits" >
+                    <a href="javascript:;" data-link="./assets/images/img-10.jpg">
+                        <img src="./assets/images/tn-img-10.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item nature" >
+                    <a href="javascript:;" data-link="./assets/images/img-11.jpg">
+                        <img src="./assets/images/tn-img-11.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item portraits" >
+                    <a href="javascript:;" data-link="./assets/images/img-12.jpg">
+                        <img src="./assets/images/tn-img-12.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+           
+            <div class="gallery" id="citys" >
+                <div class="gallery-item city" >
+                    <a href="javascript:;" data-link="./assets/images/img-01.jpg" class="abc">
+                        <img src="./assets/images/tn-img-01.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item city" >
+                    <a href="javascript:;" data-link="./assets/images/img-03.jpg">
+                        <img src="./assets/images/tn-img-03.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            
+                <div class="gallery-item city" >
+                    <a href="javascript:;" data-link="./assets/images/img-05.jpg">
+                        <img src="./assets/images/tn-img-05.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item city" >
+                    <a href="javascript:;" data-link="./assets/images/img-06.jpg">
+                        <img src="./assets/images/tn-img-06.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="gallery" id="portraits">
+                <div class="gallery-item portraits" >
+                    <a href="javascript:;" data-link="./assets/images/img-01.jpg" class="abc">
+                        <img src="./assets/images/tn-img-01.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item portraits" >
+                    <a href="javascript:;" data-link="./assets/images/img-02.jpg">
+                        <img src="./assets/images/tn-img-02.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item portraits" >
+                    <a href="javascript:;" data-link="./assets/images/img-10.jpg">
+                        <img src="./assets/images/tn-img-10.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item portraits" >
+                    <a href="javascript:;" data-link="./assets/images/img-12.jpg">
+                        <img src="./assets/images/tn-img-12.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item portraits" >
+                    <a href="javascript:;" data-link="./assets/images/img-07.jpg" class="abc">
+                        <img src="./assets/images/tn-img-07.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item portraits" >
+                    <a href="javascript:;" data-link="./assets/images/img-09.jpg" class="abc">
+                        <img src="./assets/images/tn-img-09.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="gallery" id="natures" >
+               
+                <div class="gallery-item nature" >
+                    <a href="javascript:;" data-link="./assets/images/img-04.jpg">
+                        <img src="./assets/images/tn-img-04.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item nature" >
+                    <a href="javascript:;" data-link="./assets/images/img-07.jpg">
+                        <img src="./assets/images/tn-img-07.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item nature" >
+                    <a href="javascript:;" data-link="./assets/images/img-10.jpg" class="abc">
+                        <img src="./assets/images/tn-img-10.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item nature" >
+                    <a href="javascript:;" data-link="./assets/images/img-08.jpg">
+                        <img src="./assets/images/tn-img-08.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item nature" >
+                    <a href="javascript:;" data-link="./assets/images/img-09.jpg">
+                        <img src="./assets/images/tn-img-09.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="gallery-item nature" >
+                    <a href="./assets/images/img-11.jpg">
+                        <img src="./assets/images/tn-img-11.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="tm-contact">
+            <div class="tm-contact-header">
+                <i class="fas fa-map-pin fa-3x"></i>
+                <h2>Contact</h2>
+            </div>
+            <div class="tm-contact-info">
+                <address class="tm-mb-30">
+					120 Curabitur sed tortor ultrices,
+					congue odio eget, posuere urna.
+					Praesent at rhoncus 10680
+                </address>
+                <div class="tm-text-white">
+                    Tel: 
+                    <a href="tel:0100200340" class="tm-link-white">010-020-0340</a>
+                </div>
+                <div class="tm-flex">
+                    <a href="https://facebook.com" class="tm-social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="tm-contact-form-container">
+                <form id="contact-form" action="" method="POST" class="tm-contact-form">
+                    <input type="text" name="name" placeholder="name" required="">
+                    <input type="email" name="email" placeholder="email" required="">
+                    <textarea rows="5" name="message" class="tm-mb-30" placeholder="message" required=""></textarea>		          	
+                    <button type="submit" class="tm-right tm-btn-submit">send</button>          	
+              </form>
+            </div>
+        </section>
+        <footer class="tm-footer">
+			Copyright 2020 Nano Folio - Design: <a rel="sponsored" href="https://www.tooplate.com" class="tm-link-gray">Tooplate</a>
+		</footer>
+    </div>
+    
+
+</body>
+</html>
